@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fafafa"
+    tools:context=".Home_QRfood">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/main_bg" >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/activity_logo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Welcome QRfood Home!!!"
+            android:textColor="#EEEEEE"
+            android:textSize="70px"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <Button
+            android:id="@+id/foodDocument"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/main_button1_shape"
+            android:drawableTop="@drawable/ic_foodmenu_button"
+            android:text="食物檔案"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/FoodDairy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/main_button1_shape"
+            android:drawableTop="@drawable/ic_fooddairy_button"
+            android:text="飲食日誌"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <Button
+            android:id="@+id/personalData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/main_button1_shape"
+            android:drawableTop="@drawable/ic_personaldata"
+            android:text="個人資料"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/nutritioninform"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/main_button1_shape"
+            android:drawableTop="@drawable/ic_foodnutritious"
+            android:text="營養資訊"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/main_button2_shape"
+        android:drawableTop="@drawable/ic_qrcode"
+        android:text="QRcode"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="50px"
+        android:textStyle="bold" />
+
+</LinearLayout>

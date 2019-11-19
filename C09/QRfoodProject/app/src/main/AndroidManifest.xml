@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.qrfoodproject">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+
+        android:label="QRFood：我的飲食日誌"
+
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".NutritionInform.NutritionInform_06" />
+        <activity android:name=".NutritionInform.NutritionInform_05" />
+        <activity android:name=".NutritionInform.NutritionInform_04" />
+        <activity android:name=".NutritionInform.NutritionInform_03" />
+        <activity android:name=".NutritionInform.NutritionInform_02" />
+        <activity android:name=".NutritionInform.NutritionInform_01" />
+        <activity android:name=".NutritionInform.NutritionInform" />
+        <activity android:name=".login.Register" />
+        <activity android:name=".Home_QRfood">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.MainActivity" />
+        <activity android:name=".Profile.Profile_main" />
+        <activity android:name=".Profile.Profile_ModifyPassword" />
+        <activity android:name=".Profile.Profile_ModifyData" />
+        <activity android:name=".Qrcode.Qrcode_main" />
+        <activity android:name=".Qrcode.ScanQrcode" />
+        <activity android:name=".FoodDairy.FoodDairy_main" />
+        <activity android:name=".FoodDairy.FoodDairy_AddFood" />
+        <activity android:name=".FoodDairy.calen.FoodDairy_Calen" />
+        <activity android:name=".FoodDairy.calen.FoodDairy_Calen_date" />
+        <activity android:name=".FoodFile.restaurant.FoodFile_restaurant" />
+        <activity android:name=".FoodFile.category.FoodFile_Category" />
+        <activity android:name=".FoodFile.FoodFile_FoodcInformation" />
+        <activity android:name=".FoodFile.food.FoodFile_Food" />
+        <activity android:name=".FoodDairy.FoodDairy_intake_nutrition" />
+
+        <service android:name=".PushNotification.NotificationService"></service>
+
+        <receiver android:name=".PushNotification.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="android.intent.action.USER_PRESENT"></action>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+
+</manifest>
