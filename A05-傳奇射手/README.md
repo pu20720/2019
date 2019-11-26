@@ -10,4 +10,5 @@
 
 成果報告書一份   
 系統程式檔一份  
-專題介紹影片YouTube link: https://youtu.be/RGbeNfWg9wA
+專題介紹影片YouTube link: https://youtu.be/RGbeNfWg9wA  
+傳奇射手test3.exe啟動遊戲
