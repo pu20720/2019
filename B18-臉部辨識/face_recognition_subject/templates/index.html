@@ -1,0 +1,197 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+{% block content %}
+<div id="wrapper">
+    <div id="header-wrapper">
+        <div id="header" class="container">
+            <div id="logo">
+                <h1><a href="/">臉部辨識系統</a></h1>
+            </div>
+            <div id="menu"><font size="4">
+                <ul>
+                    <li><a href="/" accesskey="2" title="">首頁</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/about_object" accesskey="2" title="">專案介紹</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/about_us" accesskey="2" title="">關於我們</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/admin" accesskey="2" title="">後台管理</a></li>
+                </ul>
+            </font></div>
+        </div>
+    </div>
+    
+    <div id="banner">
+        <div class="container">
+            <div class="title">
+                <h2>face recognition</h2>
+                <span class="byline">i'm watching you</span>
+            </div>
+        </div>
+    </div>
+    <div id="extra" class="container">
+        <div class="user">
+            <div class="title"><h2>使用者專區</h2></div>
+            <ul class="actions">
+                <li>
+                    <a href="/create_dataset" class="button" data-toggle="modal" data-target="#myModal-0">建立人臉資料</a>
+                </li>
+                <li>
+                    <a href="/user_information" class="button" data-toggle="modal" data-target="#myModal-1">修改個人資料</a>
+                </li>
+                <li>
+                    <a href="/delete_user" class="button" data-toggle="modal" data-target="#myModal-2">刪除人臉資料</a>
+                </li>
+            </ul>
+        </div>
+        <div class="recognition">
+            <div class="camera">
+                <div class="title">
+                    <h2>攝像頭辨識</h2>
+                </div>
+                <ul class="actions">
+                    <li>
+                        <a href="/detect" class="button">即時辨識</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="photo">
+                <div class="title">
+                    <h2>圖片辨識</h2>
+                </div>
+                <ul class="actions">
+                    <li>
+                        <form id="target" action="/detect_image" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <label for="file-input" class="button" data-toggle="modal" data-target="#myModal-3">上傳圖片</label>
+                            <input id="file-input" name="userImage" type="file" style="display: none;" accept="image/*" />
+                        </form>
+                        <script>
+                            $('#file-input').change(function() {
+                                $('#target').submit();
+                            });
+                        </script>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 彈出視窗 -->
+
+<!-- 建立人臉資料 -->
+<div class="modal fade" id="myModal-0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel" align="center">程式執行中，請稍等</h4>
+            </div>
+            <div class="modal-body">
+                <ul align="center">
+                    <img src="/static/img/please_waiting.gif">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 修改個人資料 -->
+<div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel" align="center">修改個人資料</h4>
+            </div>
+            <div class="modal-body">
+                <form action="/user_information" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="inputId">請輸入ID</label>
+                            <input type="text" class="form-control" name="id" id="id">
+                            
+                            <label for="inputFirst_name">請輸入姓氏</label>
+                            <input type="text" class="form-control" name="first_name" id="first_name">
+                            
+                            <label for="inputLast_name">請輸入名字</label>
+                            <input type="text" class="form-control" name="last_name" id="last_name">
+                            
+                            <label for="inputAddress">請輸入住址</label>
+                            <input type="text" class="form-control" name="address" id="address">
+                            
+                            <label for="inputGrade">請輸入年級</label>
+                            <input type="text" class="form-control" name="grade" id="grade">
+                            
+                            <label for="inputDepartment">請輸入系所</label>
+                            <input type="text" class="form-control" name="Department" id="Department">
+                            
+                            <label for="inputIntroduction">請輸入個人介紹</label>
+                            <input type="text" class="form-control" name="Introduction" id="Introduction">
+                        </div>
+                        <button type="submit" class="btn btn-warning">送出</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 刪除個人資料 -->    
+<div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel" align="center">刪除個人資料</h4>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>刪除個人資料後會重新整理資料集，請稍等</li>
+                </ul>
+                <form action="/delete_user" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="inputId">請輸入ID</label>
+                            <input type="text" class="form-control" name="id" id="id">
+                        </div>
+                        <button type="submit" class="btn btn-warning">送出</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 圖片辨識 -->
+<div class="modal fade" id="myModal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel" align="center">圖片辨識中，請稍等</h4>
+            </div>
+            <div class="modal-body">
+                <ul align="center">
+                    <img src="/static/img/please_waiting.gif">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
