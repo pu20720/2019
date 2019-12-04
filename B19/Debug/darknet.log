@@ -1,0 +1,1 @@
+﻿C:\Yol\darknet-master\build\darknet\darknet.vcxproj(55,5): error MSB4019: 找不到匯入的專案 "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\BuildCustomizations\CUDA 10.0.props"。請確認 <Import> 宣告中的路徑正確，而且檔案位於磁碟上。
