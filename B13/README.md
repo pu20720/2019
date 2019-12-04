@@ -19,13 +19,17 @@
 資工四A|410516316|吳明曄
         
 ## 指導老師
-        林浩仁　教授
+林浩仁　教授
         
-## 專題報告書：B13-巨型3D列印機成果報告書.pdf
+## 專題報告書
+B13-巨型3D列印機成果報告書.pdf
 
 
-## 程式電子檔：G1_Marlin-bugfix-1.1.x\Marlin　（Firmware）
+## 程式電子檔
+G1_Marlin-bugfix-1.1.x\Marlin　（Firmware）
 
+## 影片
+<img align="left" width=40 src="Photo/800px-YouTube_icon.png"/>
 
 [YouTube link](https://youtu.be/ePHhrAAkC1s)
 
