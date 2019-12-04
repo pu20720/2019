@@ -5,9 +5,9 @@
 專題介紹影片︰https://youtu.be/iogbO0cZxFo
 
 說明︰
-1.imshow是本專題成果中的平面偵測，請先https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md安裝librealsense2 SDK。
+1.imshow是本專題成果中的平面偵測，請先https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md 安裝librealsense2 SDK。
 2.安裝完成後請將本專題的imshow資料夾覆蓋原本的imshow資料夾。
-3.請參考https://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html安裝opencv。
-4.請參考https://github.com/IntelRealSense/librealsense/tree/master/wrappers/opencv#linux確定正確的opencv版本，並參考其步驟完成其他安裝步驟。
+3.請參考https://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html 安裝opencv。
+4.請參考https://github.com/IntelRealSense/librealsense/tree/master/wrappers/opencv#linux 確定正確的opencv版本，並參考其步驟完成其他安裝步驟。
 5.完成後於librealsense/build/wrappers/opencv/imshow/中執行rs-imshow就會是本專題的平面偵測成果。
 6.
