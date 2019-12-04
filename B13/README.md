@@ -1,5 +1,13 @@
 # 專題名稱：巨型3D列印機
-
+### 組員名稱
+系級|學號|名子
+--------|---|-------
+資管四A|410515807|曾禹宸
+資管四A|410503761|林佩萱
+資管四A|410521387|王昱淇
+資工四A|410516316|吳明曄
+  
+  
 組員名稱：
         資管四A 410515807 曾禹宸
         資管四A 410503761 林佩萱
@@ -15,4 +23,4 @@
 程式電子檔：G1_Marlin-bugfix-1.1.x\Marlin　（Firmware）
 
 
-YouTube link：https://youtu.be/ePHhrAAkC1s
+[YouTube link](https://youtu.be/ePHhrAAkC1s)
