@@ -9,7 +9,7 @@
 
 專題成果報告書檔:區塊鏈之旅館推薦系統報告書.docx
 
-final_project.tar:包含推薦模型、推薦程式、推薦資料、寫入資料庫程式
+final_project:包含推薦模型、推薦程式、推薦資料、寫入資料庫程式
 final_recmhotl.tar:flask網頁程式碼
-
+GetHotel_imge:爬取網站image url
 專題介紹影片YouTube link: https://youtu.be/0M6yZMhq9QQ
