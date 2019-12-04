@@ -33,4 +33,5 @@ G1_Marlin-bugfix-1.1.x\Marlin　（Firmware）
 
 [YouTube link](https://youtu.be/ePHhrAAkC1s)
 
-
+<img align="left" width=200 src="http://img.youtube.com/vi/ePHhrAAkC1s/1.jpg"/>
+<img width=200 src="http://img.youtube.com/vi/ePHhrAAkC1s/3.jpg"/>
