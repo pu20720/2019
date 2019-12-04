@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+
+{% block title %}Eyebrow{% endblock %}
+{% block head %}
+	{{ super() }}
+	<style type="text/css">
+		h1{
+			font-family:標楷體;
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<h1>眉毛</h1>
+		</div>
+
+
+		<div class="row" style="margin-top:20px">
+
+			<div class="col-md-12">
+
+				<form action="" method="POST" enctype="multipart/form-data">
+
+					<h4><strong>選擇想要換眉毛的相片</strong></h4>
+					<input type="file" name="pic" id="pic" accept="image/*" placeholder="Pic" class="btn btn-default" required>
+
+					<br>
+
+					<h4><strong>選擇喜歡的眉毛</strong></h4>
+					<!--第一列眉毛-->
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="10" required>
+						<image src="\static\shape\10-l.png" width="95"></image>
+						<image src="\static\shape\10-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="11" required>
+						<image src="\static\shape\11-l.png" width="95"></image>
+						<image src="\static\shape\11-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="12" required>
+						<image src="\static\shape\12-l.png" width="95"></image>
+						<image src="\static\shape\12-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="13" required>
+						<image src="\static\shape\13-l.png" width="95"></image>
+						<image src="\static\shape\13-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="14" required>
+						<image src="\static\shape\14-l.png" width="95"></image>
+						<image src="\static\shape\14-r.png" width="95"></image>
+					</label>
+
+					<br>
+					<br>
+
+					<!--第二列眉毛-->
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="15" required>
+						<image src="\static\shape\15-l.png" width="95"></image>
+						<image src="\static\shape\15-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="16" required>
+						<image src="\static\shape\16-l.png" width="95"></image>
+						<image src="\static\shape\16-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="17" required>
+						<image src="\static\shape\17-l.png" width="95"></image>
+						<image src="\static\shape\17-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="18" required>
+						<image src="\static\shape\18-l.png" width="95"></image>
+						<image src="\static\shape\18-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="19" required>
+						<image src="\static\shape\19-l.png" width="95"></image>
+						<image src="\static\shape\19-r.png" width="95"></image>
+					</label>
+
+					<br>
+					<br>
+
+					<!--第三列眉毛-->
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="20" required>
+						<image src="\static\shape\20-l.png" width="95"></image>
+						<image src="\static\shape\20-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="21" required>
+						<image src="\static\shape\21-l.png" width="95"></image>
+						<image src="\static\shape\21-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="22" required>
+						<image src="\static\shape\22-l.png" width="95"></image>
+						<image src="\static\shape\22-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="23" required>
+						<image src="\static\shape\23-l.png" width="95"></image>
+						<image src="\static\shape\23-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="24" required>
+						<image src="\static\shape\24-l.png" width="95"></image>
+						<image src="\static\shape\24-r.png" width="95"></image>
+					</label>
+
+
+
+					<br>
+					<br>
+					<br>
+					<input type="hidden" name="SECRET_KEY" value="rmotr">
+					<button type="submit" name='submit' class="btn btn-default" value="resEyebrow">提交</button>
+			</div>
+		</div>
+	</div>
+{% endblock %}

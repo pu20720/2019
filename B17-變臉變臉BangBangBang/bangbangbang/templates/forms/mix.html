@@ -1,0 +1,263 @@
+{% extends 'base.html' %}
+
+{% block title %}Eyebrow+Lip{% endblock %}
+{% block head %}
+	{{ super() }}
+	<style type="text/css">
+		h1{
+			font-family:標楷體;
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<h1>眉毛+嘴唇</h1>
+		</div>
+
+
+		<div class="row" style="margin-top:20px">
+
+			<div class="col-md-12">
+
+				<form action="" method="POST" enctype="multipart/form-data">
+
+					<h4><strong>選擇想要上色的相片</strong></h4>
+					<input type="file" name="pic" id="pic" accept="image/*" placeholder="Pic" class="btn btn-default" required>
+
+					<br>
+
+					<h4><strong>選擇喜歡的眉毛</strong></h4>
+					<!--第一列眉毛-->
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="10" required>
+						<image src="\static\shape\10-l.png" width="95"></image>
+						<image src="\static\shape\10-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="11" required>
+						<image src="\static\shape\11-l.png" width="95"></image>
+						<image src="\static\shape\11-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="12" required>
+						<image src="\static\shape\12-l.png" width="95"></image>
+						<image src="\static\shape\12-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="13" required>
+						<image src="\static\shape\13-l.png" width="95"></image>
+						<image src="\static\shape\13-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="14" required>
+						<image src="\static\shape\14-l.png" width="95"></image>
+						<image src="\static\shape\14-r.png" width="95"></image>
+					</label>
+
+					<br>
+					<br>
+
+					<!--第二列眉毛-->
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="15" required>
+						<image src="\static\shape\15-l.png" width="95"></image>
+						<image src="\static\shape\15-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="16" required>
+						<image src="\static\shape\16-l.png" width="95"></image>
+						<image src="\static\shape\16-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="17" required>
+						<image src="\static\shape\17-l.png" width="95"></image>
+						<image src="\static\shape\17-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="18" required>
+						<image src="\static\shape\18-l.png" width="95"></image>
+						<image src="\static\shape\18-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="19" required>
+						<image src="\static\shape\19-l.png" width="95"></image>
+						<image src="\static\shape\19-r.png" width="95"></image>
+					</label>
+
+					<br>
+					<br>
+
+					<!--第三列眉毛-->
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="20" required>
+						<image src="\static\shape\20-l.png" width="95"></image>
+						<image src="\static\shape\20-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="21" required>
+						<image src="\static\shape\21-l.png" width="95"></image>
+						<image src="\static\shape\21-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="22" required>
+						<image src="\static\shape\22-l.png" width="95"></image>
+						<image src="\static\shape\22-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="23" required>
+						<image src="\static\shape\23-l.png" width="95"></image>
+						<image src="\static\shape\23-r.png" width="95"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="shape" value="24" required>
+						<image src="\static\shape\24-l.png" width="95"></image>
+						<image src="\static\shape\24-r.png" width="95"></image>
+					</label>
+
+					<br>
+					<br>
+					<br>
+
+					<h4><strong>選擇口紅的顏色</strong></h4>
+					<!--第一列顏色-->
+					<label class="radio-inline">
+						<input type="radio" name="color" value="cc2701" required> <image src="\static\color\cc2701.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="cc0001" required> <image src="\static\color\cc0001.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="b8013b" required> <image src="\static\color\b8013b.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="a00064" required> <image src="\static\color\a00064.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="8e0090" required> <image src="\static\color\8e0090.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="4f0080" required> <image src="\static\color\4f0080.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="e52c00" required> <image src="\static\color\e52c00.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="e90002" required> <image src="\static\color\e90002.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="cb0043" required> <image src="\static\color\cb0043.jpg"></image>
+					</label>
+
+					<br>
+					<br>
+
+					<!--第二列顏色-->
+					<label class="radio-inline">
+						<input type="radio" name="color" value="b20070" required> <image src="\static\color\b20070.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="9f00a2" required> <image src="\static\color\9f00a2.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="ff3203" required> <image src="\static\color\ff3203.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="ff0101" required> <image src="\static\color\ff0101.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="e20147" required> <image src="\static\color\e20147.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="c5007c" required> <image src="\static\color\c5007c.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="b200b6" required> <image src="\static\color\b200b6.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="fe522a" required> <image src="\static\color\fe522a.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="fd2b28" required> <image src="\static\color\fd2b28.jpg"></image>
+					</label>
+
+					<br>
+					<br>
+
+					<!--第三列顏色-->
+					<label class="radio-inline">
+						<input type="radio" name="color" value="e72665" required> <image src="\static\color\e72665.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="ce2391" required> <image src="\static\color\ce2391.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="bf20c2" required> <image src="\static\color\bf20c2.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="ff7654" required> <image src="\static\color\ff7654.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="fe5652" required> <image src="\static\color\fe5652.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="e85180" required> <image src="\static\color\e85180.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="d948a7" required> <image src="\static\color\d948a7.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="f03760" required> <image src="\static\color\f03760.jpg"></image>
+					</label>
+
+					<label class="radio-inline">
+						<input type="radio" name="color" value="ea214d" required> <image src="\static\color\ea214d.jpg"></image>
+					</label>
+
+					<br>
+					<br>
+					<br>
+
+
+					<input type="hidden" name="SECRET_KEY" value="rmotr">
+					<button type="submit" name='submit' class="btn btn-default" value="resMix">提交</button>
+			</div>
+		</div>
+	</div>
+{% endblock %}
