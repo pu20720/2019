@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".FoodDairy.FoodDairy_AddFood" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:padding="30dp"
+        android:background="@drawable/fooddairy_titlebg"
+        android:text="新增食物"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="60px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="時段"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:textSize="50px" />
+
+        <Spinner
+            android:id="@+id/Addfood_time"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="位置"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="50px" />
+
+        <Spinner
+            android:id="@+id/Addfood_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="餐廳"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="50px" />
+
+        <Spinner
+            android:id="@+id/Addfood_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="食物種類"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="50px" />
+
+        <Spinner
+            android:id="@+id/Addfood_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="食物"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="50px" />
+
+        <Spinner
+            android:id="@+id/Addfood_food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="份數"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="50px" />
+
+        <EditText
+            android:id="@+id/Addfood_serving"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Addfood_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/fooddairy_button_shape"
+        android:text="提交"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

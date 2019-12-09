@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodDairy.FoodDairy_main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/intake_nutrition"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/fooddairy_nutrition"
+            android:text="查看攝取營養"
+            android:textSize="45px"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="#a1c4fd"/>
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@drawable/fooddairy_titlebg"
+            android:text="顯示當天日期"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:elevation="20dp" />
+        <ImageButton
+            android:id="@+id/calen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:src ="@drawable/fooddairy_calendar"
+            android:scaleType="centerInside"
+            android:background="#a1c4fd" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E1BEE7"
+        android:alpha=".3"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:background="#ffffff"
+        app:tabTextColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

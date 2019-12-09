@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nutritioninformbg"
+    android:orientation="vertical"
+    tools:context=".NutritionInform.NutritionInform_04">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/nutritioninformbg"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:text="04.蛋豆魚肉類"
+                android:textColor="#EEEEEE"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="豆魚蛋肉類主要提供蛋白質。蛋白質是構成肌肉、器官等的主要材料，同時也是骨骼、皮膚、牙齒、頭髮等的基本原料，還有調節生理機能、供給熱量之功能。構成蛋白質之單元為胺基酸，有部分胺基酸人體無法自行合成，必須由飲食中攝取，若是缺乏必需胺基酸，人體會產生缺乏症。常見的豆魚蛋肉類有相當多種，豬肉、雞肉、牛肉、魚肉、蛋等皆是良好的蛋白質來源，若是素食者，則有黃豆製品，如豆腐、豆漿、豆干等皆可供國人選擇。衛生福利部於「每日飲食指南」建議國人每日應攝取三至八份豆魚蛋肉類，每份豆魚蛋肉類依照低、中、高的脂肪含量分別提供55、75、120大卡，低脂份量大小如下圖一。"
+                android:textColor="#FFFFFF"
+                android:textSize="50px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="圖一：豆魚蛋肉類份量示意圖"
+                android:textColor="#FFFFFF"
+                android:textSize="50px" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/nutrition_img04_1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="糖醋排骨"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50px" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/nutrition_img04_2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="糖醋魚柳"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50px" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/nutrition_img04_3" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="滷蛋"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50px" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/nutrition_img04_4" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="番茄豆腐"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50px" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

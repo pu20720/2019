@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nutritioninformbg"
+    tools:context=".NutritionInform.NutritionInform_05">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/nutritioninformbg"
+                android:text="05.低脂乳品類"
+                android:textStyle="bold"
+                android:textColor="#EEEEEE"
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="乳品類為人體蛋白質重要來源之一。蛋白質為構成身體骨骼、牙齒、皮膚、器官、肌肉等身體生長的主要材料，還能調節生理機能，另外，奶類中含有豐富的鈣質，對生長中的孩童及正值發育的青少年相當重要，對於預防骨質疏鬆症亦有效果。衛生福利部於「每日飲食指南」建議國人每日應攝取1.5至2杯乳品類。奶類依照脂肪量分為高脂、低脂、脫脂，每杯為240c.c.，熱量分別為150、120、80大卡，下圖一為乳品類份量示意圖。需要注意的是有些人喝牛奶後會有腹瀉的現象，可能為乳糖不耐症，表示體內缺乏乳糖酶，導致無法分解牛奶中的乳糖，使得乳糖被腸內細菌代謝產生脹氣，引發腹脹、打嗝、腹痛等症狀，此時可減少食用量，採漸進式的食用牛奶，或者是改喝優酪乳，減少乳糖不耐症之症狀。"
+                android:textColor="#FFFFFF"
+                android:textSize="50px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="圖一：乳品類份量示意圖"
+                android:textColor="#FFFFFF"
+                android:textSize="50px" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/nutrition_img05_1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="牛奶"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50px"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/nutrition_img05_2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="發酵乳"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50px"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile.Profile_ModifyData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:background="@drawable/profile_databg"
+                android:text="修改資料"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="80px" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="電子郵件"
+                    android:drawableLeft="@drawable/register_email"
+                    android:textColor="#000000"
+                    android:textSize="50px"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="修改電子郵件帳號"
+                    android:textColorHint="#999999"
+                    android:inputType="textEmailAddress"
+                    android:textSize="50px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="姓名"
+                    android:drawableLeft="@drawable/login_name"
+                    android:textColor="#000000"
+                    android:textSize="50px"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="修改姓名"
+                    android:textColorHint="#999999"
+                    android:inputType="text"
+                    android:textSize="50px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="性別"
+                    android:drawableLeft="@drawable/register_gender"
+                    android:textColor="#000000"
+                    android:textSize="50px"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/gender_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <RadioButton
+                        android:id="@+id/male_radio_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="25dp"
+                        android:paddingLeft="25dp"
+                        android:background="@drawable/register_radio_selector"
+                        android:textColor="@drawable/register_radio_textselector"
+                        android:text="@string/Male"
+                        android:textSize="50px"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:button="@android:color/transparent" />
+                    <RadioButton
+                        android:id="@+id/female_radio_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:background="@drawable/register_radio_selector"
+                        android:textColor="@drawable/register_radio_textselector"
+                        android:text = "@string/Female"
+                        android:textSize="50px"
+                        android:gravity="center"
+                        android:button="@android:color/transparent" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="身高"
+                    android:drawableLeft="@drawable/register_height"
+                    android:textColor="#000000"
+                    android:textSize="50px"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/edtHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="修改身高(cm)"
+                    android:textColorHint="#999999"
+                    android:inputType="number"
+                    android:textSize="50px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="體重"
+                    android:drawableLeft="@drawable/register_weight"
+                    android:textColor="#000000"
+                    android:textSize="50px"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edtWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="修改體重(kg)"
+                    android:textColorHint="#999999"
+                    android:inputType="number"
+                    android:textSize="50px" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="以下這個填空是填你平常在外的運動量\n例如：低=1、稍低=2、適=3、高=4"
+                android:textColor="#000000"
+                android:textSize="50px"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="運動量"
+                    android:drawableLeft="@drawable/register_exercise"
+                    android:textColor="#000000"
+                    android:textSize="50px"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edtExercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="50px" />
+                </LinearLayout>
+            <Button
+                android:id="@+id/commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/profile_button_shape"
+                android:text="確認提交"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="50px" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
