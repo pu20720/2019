@@ -1,0 +1,15 @@
+專題名稱︰無人機應用
+專題組員︰資工四A 410504034 蔡旻亨
+指導老師︰吳賦哲 老師
+成果報告書檔名︰無人機應用-畢業專題競賽成果報告書.docx
+專題介紹影片︰https://youtu.be/iogbO0cZxFo
+
+說明︰
+1.imshow是本專題成果中的平面偵測，請先https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md 安裝librealsense2 SDK。
+2.安裝完成後請將本專題的imshow資料夾覆蓋原本的imshow資料夾。
+3.請參考https://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html 安裝opencv。
+4.請參考https://github.com/IntelRealSense/librealsense/tree/master/wrappers/opencv#linux 確定正確的opencv版本，並參考其步驟完成其他安裝步驟。
+5.完成後於librealsense/build/wrappers/opencv/imshow/中執行rs-imshow就會是本專題的平面偵測成果。
+6.pixhawk2_autopilot.py是本專題成果中的自動飛行，此程式可以直接應用於已連接NVIDIA Jeston TX2的Pixhawk2上，飛行模式為起飛5公尺後，往東飛2公尺，再往西飛2公尺回到原點，最後降落。
+7.若自動飛行要在模擬環境中測試執行，請參考https://github.com/NVIDIA-AI-IOT/redtail/wiki/Testing-in-Simulator 安裝模擬環境。
+8.安裝完成後，修改pixhawk2_autopilot.py檔案，取消第22行與第44行的註解，並註解第43行，最後將修改後的檔案放入模擬環境中，執行程式即可。

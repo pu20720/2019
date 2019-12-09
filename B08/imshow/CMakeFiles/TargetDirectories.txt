@@ -1,0 +1,7 @@
+/home/demo/librealsense/wrappers/opencv/imshow/CMakeFiles/install.dir
+/home/demo/librealsense/wrappers/opencv/imshow/CMakeFiles/list_install_components.dir
+/home/demo/librealsense/wrappers/opencv/imshow/CMakeFiles/rebuild_cache.dir
+/home/demo/librealsense/wrappers/opencv/imshow/CMakeFiles/rs-imshow.dir
+/home/demo/librealsense/wrappers/opencv/imshow/CMakeFiles/install/local.dir
+/home/demo/librealsense/wrappers/opencv/imshow/CMakeFiles/install/strip.dir
+/home/demo/librealsense/wrappers/opencv/imshow/CMakeFiles/edit_cache.dir
