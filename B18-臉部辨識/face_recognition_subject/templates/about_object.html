@@ -1,0 +1,122 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+{% block content %}
+<div id="wrapper">
+    <div id="header-wrapper">
+        <div id="header" class="container">
+            <div id="logo">
+                <h1><a href="/">臉部辨識系統</a></h1>
+            </div>
+            <div id="menu"><font size="4">
+                <ul>
+                    <li><a href="/" accesskey="2" title="">首頁</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/about_object" accesskey="2" title="">專案介紹</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/about_us" accesskey="2" title="">關於我們</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/admin" accesskey="2" title="">後台管理</a></li>
+                </ul>
+            </font></div>
+            
+            
+        </div>
+    </div>
+    
+    <div id="banner">
+        <div class="container">
+            <div class="title">
+                <h2>face recognition</h2>
+                <span class="byline">i'm watching you</span>
+            </div>
+        </div>
+    </div>
+    <div id="extra" class="container">
+        <div class="container pdl_content">
+            <div id="beginning">
+                <div class="title">
+                    <h2>專案的介紹</h2>
+                    <div class="en">Ｉ ｎ ｔ ｒ ｏ ｄ ｕ ｃ ｔ ｉ ｏ ｎ</div>
+                </div>
+                <div class="content">
+                    <article><font size="4">
+                       此專案主要是現今流行的人臉辨識去做應用、開發。<br>
+                       其中「臉部辨識系統」，主要是透過攝像頭去拍攝人臉獲得照片並加以利用。這套系統非常萬用，可以使用在許多地方，例如學校的學生點名系統；或是公司的打卡上班系統。<br>除此之外在公共場所，像是某些場合需要工作人員比對訪客證件的時候，也可以使用臉部辨識來減省人力；大型賣場<br>場所也可以使用這個當作黑名單或VIP系統，只要有名單內的人一進門立刻就會通知管理人員要特別注意。<br><br><br><br>
+                    </font></article>
+                <div class="photo">
+                    <div class="photo-right">
+                        <img class="right" src="https://i.imgur.com/FtMSxa7.png">
+                        <div class="right-content"><font size="4">最快速的建立人臉資料庫</font></div>
+                    </div>
+                    <div class="photo-left">
+                        <img class="left" src="https://i.imgur.com/mDyaVyn.png">
+                        <div class="left-content"><font size="4">簡單輕鬆的操作方式</font></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<img src="https://i.imgur.com/1Q7TtuU.jpg" alt="" style="width: 100%;padding: 100px 0px;"> 
+<div id="extra" class="container">
+    <div class="container pdl_content">
+        <div id="use">
+            <div class="title">
+                <h2>使用介紹</h2>
+                <div class="en">Ｈ ｏ ｗ　 ｔ ｏ　 ｕ ｓ ｅ</div>
+            </div>
+            <div class="content">
+                <article><font size="4">
+                    <strong>1.「建立人臉資料」</strong>
+                    <br>
+                        系統會自動去偵測電腦的攝像頭並開始拍攝，當擷取到設定數量的照片時就會自動進行資料集的訓練。
+                </font></article>
+                <div class="photo">
+                    <img class="use-photo" src="https://i.imgur.com/LPqOLSe.png">
+                </div>
+                <br><br>
+                <article><font size="4">
+                    <strong>2.「即時辨識、圖片辨識」</strong>
+                <br>
+                    即時辨識：系統就會開啟攝像頭，當人臉與後台資料庫比對成功時就會出現"Detected"，並進入到個人資料頁面。<br>
+                    當進入個人資料頁面後便可得知自己的ID編號，之後可使用ID編號來修改、刪除個人資料。
+                </font></article>
+                <div class="photo">
+                    <img class="use-photo" src="https://i.imgur.com/MRcAjmo.png">
+                    <img class="use-photo" src="https://i.imgur.com/IyYMGaJ.png">
+                    <img class="use-photo" src="https://i.imgur.com/FUXIsBo.png">
+                    <img class="use-photo" src="https://i.imgur.com/tmsdJsK.png">
+                </div>
+                <br><br>
+                <article><font size="4">
+                    <strong>3.「個人資料、人臉資料」</strong>
+                    <br>
+                        修改個人資料：輸入自己的ID編號以及其他的資料。<br>
+                        刪除人臉資料：輸入自己的ID編號便可將自己的檔案刪除，刪除完畢後系統會重新跑一次訓練資料集確<br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;保資料正確。
+                </font></article>
+                <div class="photo">
+                    <img class="use-photo" src="https://i.imgur.com/E4lkOnk.png">
+                    <img class="use-photo" src="https://i.imgur.com/ecHP0Ra.png">
+                    <img class="use-photo" src="https://i.imgur.com/eIYVpKx.png">
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="actions" style="margin-bottom: 60px;">
+    <li>
+        <a href="/" class="button">返回上一頁</a>
+    </li>
+</ul>
+<div id="footer-wrapper">
+    <div id="footer" class="container">                      
+    </div>
+</div>    
+
+{% endblock %}
