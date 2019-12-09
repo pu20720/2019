@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>{% block title %}變臉變臉bangbangbang{% endblock %}</title>
+	{% block head %}
+		<meta charset='utf-8'></meta>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+	{% endblock %}
+</head>
+
+<body>
+
+	{% block content %}
+	<div class="container">
+		<div class="row">
+			<h1 style="font-family:標楷體">變臉變臉bangbangbang</h1>
+		</div>
+		<div class="row" style="margin-top:20px">
+			<div class="col-md-4">
+				<form role="form" action="" method="POST">
+				<div class="form-group">
+					<input type="hidden" name="SECRET_KEY" value="rmotr">
+					<button type="submit" name='submit' class="btn btn-link" value="eyebrow">
+						<img src="http://www1.pu.edu.tw/~s1052823/bangbnagbang/eyebrow2.jpg" class="img-thumbnail" alt="eyebrow" width="304" height="236">
+						<div class="caption">
+							<p>眉毛</p>
+						</div>
+					</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<form role="form" action="" method="POST">
+				<div class="form-group">
+					<input type="hidden" name="SECRET_KEY" value="rmotr">
+					<button type="submit" name='submit' class="btn btn-link" value="mix">
+						<img src="http://www1.pu.edu.tw/~s1052823/bangbnagbang/mix.jpg" class="img-thumbnail" alt="mix" width="304" height="236">
+						<div class="caption">
+							<p>眉毛+嘴唇</p>
+						</div>
+					</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<form role="form" action="" method="POST">
+				<div class="form-group">
+					<input type="hidden" name="SECRET_KEY" value="rmotr">
+					<button type="submit" name='submit' class="btn btn-link" value="lip">
+						<img src="http://www1.pu.edu.tw/~s1052823/bangbnagbang/lip.jpg" class="img-thumbnail" alt="lip" width="304" height="236">
+						<div class="caption">
+							<p>嘴唇</p>
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>	
+	</div>
+	{% endblock %}
+
+</body>
+
+</html>

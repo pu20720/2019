@@ -1,0 +1,13 @@
+專題名稱：變臉變臉BangBangBang
+專題成員：
+          資工四A 王慧娟、廖映涵、蕭可欣、曾韞容、高嘉蔚
+          資工四B 陳艾琳
+          
+成果報告書：B17-變臉變臉BangBangBang專題成果報告書.pdf
+系統程式檔：bangbangbang
+            此系統為以 Python 的框架 Flask 在本機（localhost）設置簡單的 Web API
+            run_app.py為啟動 Web 的應用程式，並依照畫面提示打開瀏覽器前往 http://127.0.0.1:8000/
+            static中的color資料夾裡面存放的是口紅的顏色
+            static中的shape資料夾裡面存放的是不同的眉毛
+            
+3~5分鐘專題介紹影片YouTube link：https://youtu.be/_UcCb83GSZo
